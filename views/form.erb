@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>Hola Sinatra</title>
+  </head>
+  <body>
+    <div class="row">
+      <form class="col s12" action="/form_response" method="post">
+        <div class="row">
+          <% if @session_closed %>
+            <div class="input-field col s12">
+              <p class="flow-text center-align black-text"><strong>Session Cerrada</strong></p>
+            </div>
+          <% end %>
+          <div class="input-field col s12">
+            <input class="validate" type="text" id="name" name="name" placeholder="Name" ></input>
+          </div>
+          <div class="input-field col s12">
+            <input class="validate" type="text" id="last_name" name="last_name" placeholder="Last Name"></input><br>
+          </div>
+          <div class="input-field col s12">
+            <input class="btn waves-effect waves-light" type="submit" name="submit"></input>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

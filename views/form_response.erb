@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <title>Hola Sinatra</title>
+  </head>
+  <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col s8 blue lighten-2">
+          <p class="flow-text center-align white-text">Hola <strong><%= "#{@name} #{@last_name}" %></strong></p><br>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <a class="btn waves-effect waves-dark" href="/log_out">Cerrar Session</a>
+      </div>
+    </div>
+  </body>
+</html>
